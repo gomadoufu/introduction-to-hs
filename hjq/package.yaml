@@ -21,6 +21,16 @@ description: Please see the README on GitHub at <https://github.com/githubuser/h
 
 dependencies:
   - base >= 4.7 && < 5
+  - aeson
+  - aeson-pretty
+  - attoparsec
+  - text
+  - bytestring
+  - unordered-containers
+  - lens-aeson
+  - lens
+  - vector
+  - errors
 
 ghc-options:
   - -Wall
@@ -46,6 +56,8 @@ executables:
       - -with-rtsopts=-N
     dependencies:
       - hjq
+      - bytestring
+      - text
 
 tests:
   hjq-test:
@@ -58,3 +70,9 @@ tests:
     dependencies:
       - hjq
       - HUnit
+      - aeson
+      - vector
+      - text
+      - unordered-containers
+      - lens-aeson
+      - lens
