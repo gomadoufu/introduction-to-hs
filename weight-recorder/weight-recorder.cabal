@@ -1,0 +1,50 @@
+cabal-version:       2.2
+
+name:                weight-recorder
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/weight-recorder#readme
+license:             BSD-3-Clause
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2023 Author name here
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+                     CHANGELOG.md
+
+executable weight-recorder
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , Spock >= 0.11
+                     , mtl
+                     , text
+                     , bcrypt
+                     , bytestring
+                     , filepath
+                     , HDBC
+                     , HDBC-sqlite3
+                     , http-types
+                     , Spock
+                     , mustache
+                     , persistable-record
+                     , relational-query-HDBC
+                     , relational-query
+                     , resource-pool
+                     , time
+                     , transformers
+                     , wai
+
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
